@@ -482,6 +482,8 @@ z-index: -1;
     /* color: var(--off-white); */
     color: var(--black);
     border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: stretch;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
     text-decoration: none;
 
