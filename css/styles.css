@@ -8,6 +8,14 @@
     --off-white3: #cecece;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
@@ -17,6 +25,23 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Black.ttf') format('truetype');
     font-weight: bold;
+}
+
+
+.prisco-right {
+    position: relative;
+}
+
+.prisco-right img {}
+
+.prisco-img {
+    height: 500px;
+}
+
+.prisco-name {
+    font-size: 30px;
+    margin-top: 5px;
+    color: var(--off-white);
 }
 
 * {
@@ -38,6 +63,19 @@ body {
     margin: auto;
     padding: 20px 10px;
     color: var(--off-white);
+    z-index: 99909;
+}
+
+.nav-container-mobile {
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10px;
+    color: var(--off-white) !important;
+    z-index: 999;
+
 }
 
 .container {
@@ -46,16 +84,82 @@ body {
     margin: auto;
 }
 
+.call-now {
+    /* background-color: var(--yellow); */
+    /* color: var(--black); */
+}
+
 .nav-links a {
     color: var(--off-white3);
     text-decoration: none;
     margin: 0px 10px;
     font-weight: bold;
     font-size: 14px;
+    z-index: 99999;
+    padding: 20px 0;
 
 }
 
+.nav-links-mobile {
+    display: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.nav-links-mobile a {
+
+    display: flex;
+    flex-direction: column;
+    color: var(--off-white) !important;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px 0;
+    z-index: 99999;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.prisco-cta {
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    color: var(--black);
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.prisco-cta:hover {
+    box-shadow: 0px 0px 15px var(--yellow);
+}
+
+.new::after {
+    /* box-shadow: inset 0px 0px 5px var(--yellow); */
+    /* box-shadow: inset 0px 0px 5px rgba(252, 136, 3, 1);; */
+
+    content: "new";
+    border: 2px solid var(--yellow);
+    /* border: 1px solid rgba(252, 136, 3, 1);; */
+    width: fit-content;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 14px;
+    color: var(--yellow);
+    top: 15px;
+    font-size: 14px;
+    right: 15px;
+}
+
+.nav-links a:hover {
+    color: var(--yellow);
+}
+
 .call {
+    transition: 0.5s;
     border: 2px solid var(--yellow);
     cursor: pointer;
     color: var(--yellow);
@@ -106,6 +210,7 @@ body {
 
     height: 20px !important;
     width: 20px !important;
+    color: var(--yellow);
 }
 
 .hero img {
@@ -170,6 +275,7 @@ body {
     align-items: center;
     width: 250px;
     cursor: pointer;
+    color: var(--black);
     font-weight: 600;
 
 
@@ -200,10 +306,12 @@ z-index: -1;
 
 .container {
     background-image: url(../images/cbum-dark.png);
+    /* background-image: url(../images/abs-gym.jpeg); */
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: right;
     background-position-y: 20px;
+    /* box-shadow: inset 0px 0px 550px var(--black); */
 }
 
 /* Second Section */
@@ -221,7 +329,7 @@ z-index: -1;
 }
 
 .section-container h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .programs-card-container {
@@ -234,8 +342,29 @@ z-index: -1;
 
 }
 
+.carousel__item__image {
+    position: relative;
+}
+
+.carousel__item__image::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 15px var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.programs-card:hover {
+    box-shadow: inset 0px 0px 10px var(--yellow);
+}
+
 .programs-card {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding: 20px;
     width: 280px;
@@ -354,6 +483,7 @@ z-index: -1;
     color: var(--black);
     border-radius: 20px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 
 }
 
@@ -784,19 +914,25 @@ z-index: -1;
 
 .carousel-info {
     flex-basis: 40%;
-    padding: 30px;
+    padding: 20px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .carousel-info h1 {
     font-size: 80px;
 }
 
+.gallery-btn:hover {
+    box-shadow: 0px 0px 15px var(--yellow);
+}
+
 .gallery-btn {
+    border: none;
     padding: 10px;
     background-color: var(--yellow);
     color: var(--black);
@@ -850,6 +986,17 @@ z-index: -1;
     border: none;
 }
 
+.socials-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.insta3dup {
+    display: none;
+}
+
 .socials-right {
     z-index: 9991;
     flex-basis: 80%;
@@ -876,6 +1023,29 @@ z-index: -1;
 
 }
 
+.quals li {
+    padding: 2px;
+}
+
+.insta-info-left, .insta-info-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+}
+
+.insta-info-left {
+    flex-direction: column-reverse;
+}
+
+.insta-info-right {
+
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    /* padding: 10px; */
+}
+
 #insta-open {
     height: 100%;
     width: 100%;
@@ -896,11 +1066,12 @@ z-index: -1;
 
 .follow-fb-title {
     width: 200px;
+    font-size: 40px;
     text-align: center;
-    font-size: 50px;
     color: var(--off-white);
-    display: inline-block;
+    display: block;
     margin: 0px 20px;
+    width: 100%;
 }
 
 .insta-info {
@@ -908,9 +1079,9 @@ z-index: -1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    backdrop-filter: blur(51px);
+    /* backdrop-filter: blur(51px); */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0 20px;
     border-radius: 10px;
     /* flex-direction: column; */
@@ -922,6 +1093,7 @@ z-index: -1;
     color: var(--off-white);
     font-size: 40px;
     text-align: center;
+    z-index: 9999;
 }
 
 .socials-center {
@@ -943,9 +1115,9 @@ z-index: -1;
     text-align: center;
     font-size: 50px;
 }
-#insta-ss{
 
-}
+#insta-ss {}
+
 .insta-follow-btn {
 
     width: 230px;
@@ -961,15 +1133,17 @@ z-index: -1;
     cursor: pointer;
 
 }
-.insta-embed{
+
+.insta-embed {
     /* position: absolute;
     bottom:0;
     background-color: #fff;
     right: 20px; */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
     background-color: #fff;
 }
-.insta-container{
+
+.insta-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -993,8 +1167,11 @@ z-index: -1;
 
 }
 
+#mobile-navs {
+    display: none;
+}
 
-#video-testimonials {
+.video-testimonials {
     display: flex;
 }
 
@@ -1144,7 +1321,8 @@ th {
 tr td:nth-child(2) {
     text-align: right;
 }
-.active-social,.active-social-i{
+
+.active-social, .active-social-i {
     border: none;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
@@ -1164,6 +1342,7 @@ tr td:nth-child(2) {
     display: block;
 
 }
+
 .active-social-i::after {
     content: "";
     position: absolute;
@@ -1187,4 +1366,753 @@ tr td:nth-child(2) {
 
 .visible {
     display: flex !important;
+}
+
+.external-review {
+    background-color: #fff;
+    color: var(--black);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.grayit {
+    font-size: 20px;
+    margin-left: 5px;
+    color: var(--off-white3) !important;
+}
+
+#prisco-container2 {
+    width: 80%;
+    margin: auto;
+    color: var(--off-white);
+    display: flex;
+    padding: 30px;
+    height: 100vh;
+    padding-top: 0;
+}
+
+#prisco-container {
+    width: 80%;
+    margin: auto;
+    color: var(--off-white);
+    display: flex;
+    padding: 30px;
+    height: 100vh;
+    padding-bottom: 0;
+}
+
+.prisco-left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+.prisco-left, .prisco-right {
+    display: flex;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prisco-left {
+    justify-content: center;
+    align-items: start;
+}
+
+.prisco-left h1 {
+    border-left: 3px solid var(--yellow);
+    padding-left: 5px;
+
+}
+
+.hero .right {
+    animation: 1s linear appear;
+}
+
+navbar {
+    animation: 1s linear appear2;
+
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes appear2 {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.call:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+
+}
+
+.services-btn:hover {
+    box-shadow: 0px 0px 15px var(--yellow);
+}
+
+.carousel-info h1::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--yellow);
+    width: 100px;
+    margin: auto;
+}
+
+
+
+.accordion .accordion-item {
+    /* border-bottom: 1px solid var(--yellow); */
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid var(--yellow);
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: var(--off-white);
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.accordion button:hover {
+    cursor: pointer;
+    border-left: 5px solid transparent;
+    color: var(--off-white);
+
+
+}
+
+.accordion button:focus {
+    cursor: pointer;
+}
+
+.accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 22px;
+    color: var(--yellow);
+
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+}
+
+.faqtitle::after {
+    content: "";
+    width: 25%;
+    background-color: var(--yellow);
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    height: 2px;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+    color: var(--off-white);
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+    color: var(--yellow);
+
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+    padding-left: 5px;
+}
+
+#faq-section {
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel .carousel__controls {
+    margin-right: 30px;
+    user-select: none;
+}
+
+.carousel-info h1 {
+    font-size: 60px;
+
+}
+
+.dots-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.burger-container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--off-white);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media only screen and (max-width: 1000px) {
+    .fitness-title span {
+        border-left: 0;
+        padding-left: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .fitness-title span::after {
+        content: "";
+        display: block;
+        background-color: var(--yellow);
+        width: 50px;
+        margin: auto;
+        height: 2px;
+        margin-top: 15px;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .video-title {
+        border-left: 0;
+        text-align: center;
+    }
+
+    video {
+        height: 250px;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .right {
+        margin-bottom: 0 !important;
+    }
+
+    .video-title::after {
+        content: "";
+        display: block;
+        background-color: var(--yellow);
+        width: 50px;
+        margin: auto;
+        height: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .video-left, #josto {
+        margin: 10px !important;
+    }
+
+    #prisco-container {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .review-container, .c-div, .insta-info {
+        flex-direction: column;
+    }
+
+    .video-testimonials {
+        flex-direction: column !important;
+
+    }
+
+    .video-right {
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        height: auto;
+    }
+
+    .location-container {
+        flex-direction: column-reverse;
+    }
+
+    .insta3dup {
+        display: inline-block;
+    }
+
+    .location-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #review-section {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    .review-content p {
+        font-size: 14px;
+    }
+
+    .customer-name h4 {
+        font-size: 13px;
+    }
+
+    .google-review img {
+        height: 35px;
+    }
+
+    .customer-info {
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .customer-profile {
+        margin-bottom: 0;
+    }
+
+    #gmap {
+        width: 100% !important;
+        height: 500px !important;
+    }
+
+    #prisco-container {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    #prisco-container2 {
+        height: auto;
+    }
+    .prisco-img{
+        height: 300px!important;
+        margin-bottom: 20px;
+        object-fit: contain;
+    }
+
+    .programs-card-container {
+        justify-content: center;
+    }
+
+    #faq-section {
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .social-btns-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accordion-title {
+        width: 70%;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+
+    .right h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .container {
+        margin: 0;
+        background-position: center center;
+        width: 95%;
+        margin: auto;
+        text-align: left;
+        height: fit-content !important;
+        /* background-size: cover; */
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .review-left h1 {
+        font-size: 35px !important;
+        letter-spacing: 2px;
+    }
+
+    .section-container {
+        margin: auto;
+        width: 95%;
+
+    }
+
+    .review-right {
+        padding: 0;
+    }
+
+    .programs-card {
+        width: 90%;
+        height: 300px;
+    }
+
+    .card-svg {
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .video-right video {
+        width: 400px;
+    }
+
+    .socials-section-container {
+        width: 100vw;
+    }
+
+    .socials-right {
+        width: 100%;
+    }
+
+    .review-left {
+        padding: 0;
+    }
+
+    .carousel .carousel__controls {
+        margin-right: 0;
+    }
+
+    .container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .right {
+        z-index: 999;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    #vid-testimonial {
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    .video-testimonials {
+        /* width: 100%; */
+    }
+
+    .video-left {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .prisco-right img {
+        width: 350px;
+        height: auto;
+    }
+
+    #vid-testimonial {
+        margin: 0;
+    }
+    .insta-info-right{
+        background-color: transparent!important;
+    }
+    .video-title {
+        margin: 0;
+    }
+
+    #prisco-container2 {
+        width: 95%;
+        margin: auto;
+    }
+
+    .logo-text {
+        z-index: 999;
+        justify-content: start;
+        align-items: start;
+        font-size: 14px;
+    }
+
+    .nav-container-mobile::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-container-mobile {
+        display: flex;
+        padding: 20px;
+    }
+
+    .call, .nav-links-mobile a:last-child {
+        font-size: 16px !important;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--yellow) !important;
+        color: var(--black) !important;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .prisco-cta {
+        margin-bottom: 20px;
+    }
+
+    .quals {
+        margin-top: 30px !important;
+        margin-left: 15px !important;
+
+    }
+
+    .prisco-left h1 {
+        margin-top: 30px;
+        font-size: 35px;
+        text-align: center;
+        border-left: 0;
+        border-bottom: 0px !important;
+        width: 100%;
+
+    }
+
+    #facebook-open, #insta-open {
+        padding: 30px 20px;
+    }
+
+    .video-left h1::after {
+        margin-top: 5px;
+    }
+
+    #location-section {
+        padding: 10px !important;
+    }
+
+    .prisco-left h1::after {
+        content: "";
+        display: block;
+        background-color: var(--yellow);
+        width: 100%;
+
+        margin: auto;
+        height: 2px;
+        margin-top: 12px;
+    }
+
+    .prisco-left h1 span {
+        display: block;
+    }
+
+    .socials-left {
+        padding: 20px;
+    }
+
+    .insta3d {
+        display: none;
+        position: relative;
+    }
+
+    .active-social-i::after {
+        top: 30px;
+        left: 24px;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #285aeb;
+    }
+
+    .active-social::after {
+        top: 30px;
+        left: 24px;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #00c6ff;
+    }
+    .fb-phone-container img{
+        height: 100px!important;
+        width: auto!important;
+        object-fit: contain;
+    }
+    .socials-left h1 {
+        margin-bottom: 0;
+    }
+    .follow-fb-title {
+        font-size: 25px;
+    }
+    .instagram-media{
+        width: 300px!important;
+    }
+    #facebook-handle{
+        margin-right: 10px;
+    }
+    .socials-left img {
+        height: 80px !important;
+    }
+    .insta-container img{
+        height: 80px;
+        width: auto;
+        object-fit: contain;
+    }
+    .insta-container h1{
+        font-size: 25px!important;
+    }
+
+    .social-btns-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-btns-container button {
+        font-size: 14px;
+        width: auto;
+        padding: 20px;
+    }
+    .carousel-info h1{
+        font-size: 40px;
+    }
+    .carousel-info h1::after{
+        margin-top: 5px;
+    }
+    .video-title{
+        font-size: 20px;
+    }
+    .accordion-item button {
+        display: flex;
+        align-items: center;
+    }
+    .accordion-item span{
+        display: block;
+    }
+    .accordion-title{
+        flex-basis: 90%;
+    }
+    .accordion button .accordion-title{
+        padding:  0;
+    }
+    #prisco-container2{
+        padding: 0 20px;
+    }
+    .quals li {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .video-right video {
+        width: 300px !important;
+    }
 }
