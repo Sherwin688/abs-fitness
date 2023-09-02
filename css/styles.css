@@ -187,6 +187,10 @@ body {
     align-items: center;
     margin-left: 10px;
 }
+.logo-text h2{
+
+    font-size: 20px;
+}
 
 .hero {
     height: 85vh;
