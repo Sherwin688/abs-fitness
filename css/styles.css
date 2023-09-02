@@ -2087,6 +2087,7 @@ navbar {
         font-size: 14px;
         width: auto;
         padding: 20px;
+        color: var(--black)!important;
     }
     .carousel-info h1{
         font-size: 40px;
