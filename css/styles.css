@@ -2108,6 +2108,9 @@ navbar {
     .accordion-title{
         flex-basis: 90%;
     }
+    .table-container{
+        width: 300px;
+    }
     .accordion button .accordion-title{
         padding:  0;
     }
