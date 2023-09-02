@@ -2084,6 +2084,7 @@ navbar {
     }
     .customer-name img{
         height: 13px!important;
+        width: 80px!important;
     }
     .insta-container img {
         height: 80px;
