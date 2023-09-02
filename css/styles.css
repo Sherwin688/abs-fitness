@@ -2082,7 +2082,9 @@ navbar {
     .customer-profile,.customer-img,.customer-name,.customer-info{
         height: 52px!important;
     }
-
+    .customer-name img{
+        height: 13px!important;
+    }
     .insta-container img {
         height: 80px;
         width: auto;
