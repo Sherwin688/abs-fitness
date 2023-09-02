@@ -2079,6 +2079,9 @@ navbar {
     .socials-left img {
         height: 80px !important;
     }
+    .customer-profile,.customer-img,.customer-name,.customer-info{
+        height: 52px!important;
+    }
 
     .insta-container img {
         height: 80px;
@@ -2113,9 +2116,6 @@ navbar {
 
     .video-title {
         font-size: 20px;
-    }
-    .customer-info{
-        height: 50px!important;
     }
 
     .accordion-item button {
