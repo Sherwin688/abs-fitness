@@ -2042,6 +2042,9 @@ navbar {
         border-right: 25px solid transparent;
         border-bottom: 50px solid #285aeb;
     }
+    .customer-name{
+        align-items: flex-start!important;
+    }
 
     .active-social::after {
         top: 30px;
