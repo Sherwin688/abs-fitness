@@ -187,7 +187,8 @@ body {
     align-items: center;
     margin-left: 10px;
 }
-.logo-text h2{
+
+.logo-text h2 {
 
     font-size: 20px;
 }
@@ -503,7 +504,7 @@ z-index: -1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
 }
 
@@ -1796,8 +1797,9 @@ navbar {
     #prisco-container2 {
         height: auto;
     }
-    .prisco-img{
-        height: 300px!important;
+
+    .prisco-img {
+        height: 300px !important;
         margin-bottom: 20px;
         object-fit: contain;
     }
@@ -1928,9 +1930,11 @@ navbar {
     #vid-testimonial {
         margin: 0;
     }
-    .insta-info-right{
-        background-color: transparent!important;
+
+    .insta-info-right {
+        background-color: transparent !important;
     }
+
     .video-title {
         margin: 0;
     }
@@ -2048,33 +2052,41 @@ navbar {
         border-right: 25px solid transparent;
         border-bottom: 50px solid #00c6ff;
     }
-    .fb-phone-container img{
-        height: 100px!important;
-        width: auto!important;
+
+    .fb-phone-container img {
+        height: 100px !important;
+        width: auto !important;
         object-fit: contain;
     }
+
     .socials-left h1 {
         margin-bottom: 0;
     }
+
     .follow-fb-title {
         font-size: 25px;
     }
-    .instagram-media{
-        width: 300px!important;
+
+    .instagram-media {
+        width: 300px !important;
     }
-    #facebook-handle{
+
+    #facebook-handle {
         margin-right: 10px;
     }
+
     .socials-left img {
         height: 80px !important;
     }
-    .insta-container img{
+
+    .insta-container img {
         height: 80px;
         width: auto;
         object-fit: contain;
     }
-    .insta-container h1{
-        font-size: 25px!important;
+
+    .insta-container h1 {
+        font-size: 25px !important;
     }
 
     .social-btns-container {
@@ -2087,36 +2099,49 @@ navbar {
         font-size: 14px;
         width: auto;
         padding: 20px;
-        color: var(--black)!important;
+        color: var(--black) !important;
     }
-    .carousel-info h1{
+
+    .carousel-info h1 {
         font-size: 40px;
     }
-    .carousel-info h1::after{
+
+    .carousel-info h1::after {
         margin-top: 5px;
     }
-    .video-title{
+
+    .video-title {
         font-size: 20px;
     }
+    .customer-info{
+        height: 50px!important;
+    }
+
     .accordion-item button {
         display: flex;
         align-items: center;
     }
-    .accordion-item span{
+
+    .accordion-item span {
         display: block;
     }
-    .accordion-title{
+
+    .accordion-title {
         flex-basis: 90%;
     }
-    .table-container{
+
+    .table-container {
         width: 300px;
     }
-    .accordion button .accordion-title{
-        padding:  0;
+
+    .accordion button .accordion-title {
+        padding: 0;
     }
-    #prisco-container2{
+
+    #prisco-container2 {
         padding: 0 20px;
     }
+
     .quals li {
         margin-bottom: 5px;
     }
