@@ -82,10 +82,7 @@ body {
     margin: auto;
 }
 
-.call-now {
-    /* background-color: var(--yellow); */
-    /* color: var(--black); */
-}
+
 
 .nav-links a {
     color: var(--off-white3);
@@ -588,11 +585,7 @@ z-index: -1;
 
 }
 
-.prev:hover, .next:hover {
-    /* background-color: rgba(0,0,0,0.8); */
-    /* font-size: 32px; */
 
-}
 
 .text {
     color: #f2f2f2;
@@ -1122,7 +1115,6 @@ z-index: -1;
     font-size: 50px;
 }
 
-#insta-ss {}
 
 .insta-follow-btn {
 
@@ -1491,10 +1483,6 @@ navbar {
 }
 
 
-
-.accordion .accordion-item {
-    /* border-bottom: 1px solid var(--yellow); */
-}
 
 .accordion .accordion-item button[aria-expanded=true] {
     border-bottom: 1px solid var(--yellow);
@@ -1911,9 +1899,6 @@ navbar {
         width: 100%;
     }
 
-    .video-testimonials {
-        /* width: 100%; */
-    }
 
     .video-left {
         width: 100%;
