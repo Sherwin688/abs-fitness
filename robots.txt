@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sherwin688.github.io/abs-fitness/sitemap.xml
