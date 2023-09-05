@@ -180,7 +180,9 @@ body {
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
-
+.main-section{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
 .change .bar2 {
     opacity: 0;
 }
@@ -205,6 +207,10 @@ body {
     color: var(--off-white) !important;
     z-index: 999;
 
+}
+
+.call {
+    text-decoration: none !important;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -248,9 +254,11 @@ body {
         padding-left: 0;
         word-break: break-all;
     }
-    .source-p{
-        padding-left: 0!important;
+
+    .source-p {
+        padding-left: 0 !important;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
