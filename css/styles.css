@@ -36,6 +36,25 @@ a {
     height: 500px;
 }
 
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 9999999999999999;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
 .prisco-name {
     font-size: 30px;
     margin-top: 5px;
@@ -1632,10 +1651,12 @@ navbar {
     cursor: pointer;
     z-index: 99999;
 }
-.fitness-price{
+
+.fitness-price {
     color: var(--off-white3);
     text-align: center;
 }
+
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -1655,31 +1676,38 @@ navbar {
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
-#package-section{
-    background-color: var(--black2)!important;
+
+#package-section {
+    background-color: var(--black2) !important;
     color: var(--off-white3);
 }
-.package-title{
+
+.package-title {
     font-weight: bold;
     font-size: 30px;
     padding-left: 5px;
     border-left: 3px solid var(--yellow);
-   margin-top: 40px;
-   margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
-.package-desc{
+
+.package-desc {
     padding-left: 8px;
 }
-.package-list{
+
+.package-list {
     padding-left: 13px;
 }
-.package-desc p{
+
+.package-desc p {
     margin-bottom: 20px;
 }
+
 @media only screen and (max-width: 1000px) {
-    .prisco-left p{
-        margin-left: 0!important;
+    .prisco-left p {
+        margin-left: 0 !important;
     }
+
     .fitness-title span {
         border-left: 0;
         padding-left: 0;
@@ -2054,8 +2082,9 @@ navbar {
         border-right: 25px solid transparent;
         border-bottom: 50px solid #285aeb;
     }
-    .customer-name{
-        align-items: flex-start!important;
+
+    .customer-name {
+        align-items: flex-start !important;
     }
 
     .active-social::after {
@@ -2091,13 +2120,16 @@ navbar {
     .socials-left img {
         height: 80px !important;
     }
-    .customer-profile,.customer-img,.customer-name,.customer-info{
-        height: 52px!important;
+
+    .customer-profile, .customer-img, .customer-name, .customer-info {
+        height: 52px !important;
     }
-    .customer-name img{
-        height: 15px!important;
-        width: 100px!important;
+
+    .customer-name img {
+        height: 15px !important;
+        width: 100px !important;
     }
+
     .insta-container img {
         height: 80px;
         width: auto;

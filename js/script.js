@@ -220,3 +220,12 @@ function myFunction(x) {
 	}
 	
   }
+  window.addEventListener("scroll", function() {showFunction()});
+
+    function showFunction() {
+        if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 600) {
+            document.getElementById("whatsapp").style.display = "block";
+        } else {
+            document.getElementById("whatsapp").style.display = "none";
+        }
+    }
