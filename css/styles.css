@@ -359,8 +359,6 @@ z-index: -1;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
 
 .carousel__item__image {
@@ -803,6 +801,15 @@ z-index: -1;
 @media only screen and (min-width: 1180px) {
     .carousel .carousel__wrapper.has-arrows .carousel__arrows {
         display: flex;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .programs-card-container{
+        justify-content: center;
+        gap: 20px;
+    }
+    .container {
+        background-position-y:110px;
     }
 }
 
