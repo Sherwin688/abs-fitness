@@ -325,7 +325,7 @@ z-index: -1;
 } */
 
 .container {
-    background-image: url(../images/cbum-dark.png);
+    background-image: url(../images/cbum-dark.webp);
     /* background-image: url(../images/abs-gym.jpeg); */
     background-repeat: no-repeat;
     background-size: 500px;
