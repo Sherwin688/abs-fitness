@@ -1715,6 +1715,9 @@ navbar {
     .prisco-left p {
         margin-left: 0 !important;
     }
+    #vinod{
+        flex-direction: column!important;
+    }
 
     .fitness-title span {
         border-left: 0;
