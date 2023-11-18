@@ -1419,7 +1419,7 @@ tr td:nth-child(2) {
     padding-top: 0;
 }
 
-#prisco-container {
+#about {
     width: 80%;
     margin: auto;
     color: var(--off-white);
@@ -1771,7 +1771,7 @@ navbar {
         margin: 10px !important;
     }
 
-    #prisco-container {
+    #about {
         width: 95%;
         margin: auto;
         text-align: center;
@@ -1838,7 +1838,7 @@ navbar {
         height: 500px !important;
     }
 
-    #prisco-container {
+    #about {
         flex-direction: column !important;
         height: auto !important;
     }
@@ -2207,4 +2207,8 @@ navbar {
     .video-right video {
         width: 300px !important;
     }
+}
+
+#membersGallery{
+    flex-direction: column;
 }
